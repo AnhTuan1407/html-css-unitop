@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child selector</title>
+</head>
+
+<body>
+    <!-- 
+        SELECTOR ĐỊNH VỊ PHẦN TỬ ANH/CHỊ/EM
+    
+        selector: first-child{}
+        selector: last-child{}
+        selector: nth-child(value){}
+
+        Tác dụng: Chọn ra tất cả các phần tử với điều kiện theo thuộc tính
+
+        (*) Lưu ý: Khi sử dụng child phải xác định rõ các phần tử vì nó sẽ có tác dụng với tất cả các phần tử con trong phần tử cha
+        nếu muốn chỉ định rõ một phần tử nào đó trong cha sử dụng: nth-of-type(value) {}
+    -->
+
+
+    <style>
+        ul li:first-child {
+            font-weight: bold;
+            color: red;
+        }
+
+
+        ul li:last-child {
+            font-weight: bold;
+            color: green;
+        }
+
+        ul li:nth-child(odd) {
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+
+    <h1>CHILD SELECTOR</h1>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ul>
+            <li>Item 2.1</li>
+            <li>Item 2.2</li>
+            <li>Item 2.3</li>
+        </ul>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+    </ul>
+
+</body>
+
+</html>

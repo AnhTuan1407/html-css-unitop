@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before after selector</title>
+</head>
+
+<body>
+    <!-- 
+        selector:before {
+            khai báo style
+        }
+
+        selector:after {
+            khai báo style
+        }
+
+        Tác dụng: Selector giúp tạo ra một phần vào trước hoặc sau một phần tử cho trước 
+    -->
+
+    <style>
+        h2:before {
+            content: "Trước";
+            color: red;
+        }
+
+        h2:after {
+            content: "Sau";
+            color: red;
+        }
+
+        .list-post .new:after {
+            content: "";
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLK84hT0eGuSJbqDKHoGSflFsH35iu_6pWiQ&s");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+    <h2>Before after selector</h2>
+
+    <ul class="list-post">
+        <li>
+            <a href="" class="new">Bài viết số 1</a>
+        </li>
+
+        <li>
+            <a href="" class="new">Bài viết số 2</a>
+        </li>
+
+        <li>
+            <a href="">Bài viết số 3</a>
+        </li>
+    </ul>
+</body>
+
+</html>

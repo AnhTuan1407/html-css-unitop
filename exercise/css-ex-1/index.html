@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise CSS</title>
+</head>
+
+<body>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 400px auto 400px;
+        }
+
+        #wrapper h2:nth-of-type(odd) {
+            color: darkgoldenrod;
+        }
+
+        #wrapper h2:nth-of-type(even) {
+            color: yellowgreen;
+        }
+
+        #wrapper .form-data input:checked+label {
+            color: red;
+        }
+
+        p>a {
+            color: red;
+        }
+
+        p>a:hover {
+            color: blueviolet;
+        }
+
+        .title {
+            background-color: aquamarine;
+        }
+
+        .title:hover {
+            background-color: burlywood;
+        }
+    </style>
+
+    <div class="container">
+        <div class="left-side"></div>
+
+        <div id="wrapper">
+            <h1 class="title">BÀI TẬP SELECTOR CSS -UNITOP.VN</h1>
+
+            <h2>Lorem Ipsum là gì?</h2>
+
+            <p>
+                <a href="">Lorem ipsum</a> dolor sit amet consectetur adipisicing elit. Omnis quia iste delectus
+                perspiciatis
+                maxime illum
+                architecto commodi! Quisquam laboriosam illum, aperiam, autem error, earum incidunt reprehenderit
+                quibusdam
+                voluptas nisi assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quia iste
+                delectus
+                perspiciatis maxime illum
+                architecto commodi! Quisquam laboriosam illum, aperiam, autem error, earum incidunt reprehenderit
+                quibusdam
+                voluptas nisi assumenda.
+            </p>
+
+            <h2>Tại sao lại sử dụng nó?</h2>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo corporis dolores saepe in veritatis aut quas,
+            aspernatur asperiores, porro qui eligendi modi vero? Magni magnam doloribus aut velit facilis maiores!
+            Ducimus
+            repellat nobis soluta modi in labore, consequuntur delectus magnam et voluptatum eaque, iure hic consequatur
+            reprehenderit inventore impedit at vitae harum dolorum neque fugiat eligendi! Adipisci voluptates magnam id
+            tempora
+            facilis ad nihil quia ab doloribus quod repellendus, earum et velit eligendi accusantium illum distinctio
+            sint
+            odio
+            alias officiis nemo in provident. Magnam id non provident reprehenderit. Ad fugiat quibusdam minus? Dolor,
+            vel
+            aliquam. Doloribus molestiae ipsum iure distinctio!
+
+            <h2>Khóa học</h2>
+            <form action="" class="form-data">
+
+                <input type="checkbox" id="html" name="html">
+                <label for="html">Html css 21 ngày</label>
+                <br>
+                <input type="checkbox" id="bootstrap" name="bootstrap">
+                <label for="bootstrap">Bootstrap AZ</label>
+                <br>
+                <input type="checkbox" id="php" name="php">
+                <label for="php">Php master</label>
+            </form>
+        </div>
+
+        <div class="right-side"></div>
+    </div>
+
+</body>
+
+</html>

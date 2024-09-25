@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector checked</title>
+</head>
+
+<body>
+
+    <!-- 
+        SELECTOR CHECKED
+
+        selector:checked {
+        
+        }
+
+        Tác dụng: Chọn phần tử form đã được check (radio box, checkbox)
+    -->
+
+    <style>
+        .register-form input:checked+label {
+            color: red
+        }
+    </style>
+
+    <h1>SELECTOR CHECKED</h1>
+
+    <form class="register-form" action="">
+        <label>Gender</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+
+        <br><br>
+
+        <label for="foreign-language">Foreign Language</label>
+        <select name="foreign-language" id="foreign-language">
+            <option disabled selected>Foreign language</option>
+            <option value="English">English</option>
+            <option value="Japan">Japan</option>
+            <option value="Korea">Korea</option>
+            <option value="China">China</option>
+        </select>
+
+        <br><br>
+
+        <input type="checkbox" name="genshin" value="Genshin Impact">
+        <label for="genshin">Genshin Impact</label>
+        <br>
+        <input type="checkbox" name="hsr" value="Honkai Starrail">
+        <label for="hsr">Honkai Starrail</label>
+        <br>
+        <input type="checkbox" name="lol" value="League Of Legend">
+        <label for="lol">League Of Legend</label>
+        <br>
+        <input type="checkbox" name="valorant" value="Valorant">
+        <label for="valorant">Valorant</label>
+    </form>
+</body>
+
+</html>

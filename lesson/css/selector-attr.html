@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+</head>
+<body>
+    <style>
+        /* 
+            selector[attr] chọn các phần tử có thuộc tính attr
+            selector[attr = "value"] chọn các phần tử có thuộc tính = value
+            selector[attr *= "value"] chọn các phần tử có thuộc tính chứa chuỗi value
+            selector[attr ^= "value"] chọn các phần tử có thuộc tính bắt đầu bằng value
+            selector[attr $= "value"] chọn các phần tử có thuộc tính kết thúc bằng value
+        */
+
+
+        /* a {
+            font-size: 20px;
+            color: aqua;
+        } */
+
+        /* Chọn các selector có thuộc tính là href */
+        a[href] {
+            color: red;
+        }
+
+        /* Chọn các selector có thuộc tính là href và có giá trị là "http://unitop.vn" */
+        a[href = "http://unitop.vn"] {
+            color: blue;
+            font-size: 30px;
+        }
+
+
+        /* Chọn các selector có thuộc tính là href có chứa giá trị "unitop" */
+        a[href *= unitop] {
+            color: brown;
+            font-size: 30px;
+        }
+
+
+        /* Chọn các selector có thuộc tính là href và có chứa giá trị "http" ở đầu */
+        a[href ^= "http"] {
+            color: blueviolet;
+        }
+
+
+        /* Chọn các selector có thuộc tính là href và có chứa giá trị ".vn" ở cuối */
+        a[href $= ".vn"] {
+            color: cadetblue;
+            font-size: 30px;
+        }
+    </style>
+
+    <a href="http://unitop.vn">unitop.vn</a>
+    <br>
+    <a href="http://google.com">google.com</a>
+</body>
+</html>
